@@ -23,3 +23,9 @@ const actions = [
 	'begin their search for the dragonballs',
 ];
 randomActions = actions[Math.floor(Math.random() * actions.length)];
+
+function MessageMixer(a, a2, b, c) {
+	console.log(`${a} and ${a2} magically find themselves ${b} to ${c}.`);
+}
+
+MessageMixer(randomPeople, randomPeople2, randomPlaces, randomActions);
