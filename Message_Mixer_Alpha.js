@@ -25,7 +25,9 @@ const actions = [
 randomActions = actions[Math.floor(Math.random() * actions.length)];
 
 function MessageMixer(a, a2, b, c) {
-	console.log(`${a} and ${a2} magically find themselves ${b} to ${c}.`);
+	a !== 'You'
+		? console.log(`${a} and ${a2} magically find themselves ${b} in order to ${c}.`)
+		: console.log(`${a} and ${a2} magically find yourselves ${b} in order to ${c}.`);
 }
 
 MessageMixer(randomPeople, randomPeople2, randomPlaces, randomActions);
